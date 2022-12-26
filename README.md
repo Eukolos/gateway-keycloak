@@ -87,11 +87,11 @@ Content-Type: application/json
         "21321ewqe321j213as"
  ]
 }
-RESPONSE: HTTP 200 (OK)
+RESPONSE: HTTP 201 (CREATED)
 Location header: http://localhost:8889/v1/product
 ```
 
-### Get Post List
+### Get Procut List
 
 ```
 GET /v1/product
@@ -104,7 +104,7 @@ Content: ProductDto
 Location header: http://localhost:8889/v1/product
 ```
 
-### Get Post
+### Get Product By Id
 
 ```
 GET /v1/product/{id}
@@ -114,5 +114,31 @@ Content-Type: application/json
 }
 RESPONSE: HTTP 200 (OK)
 Content: ProductDto
+Location header: http://localhost:8889/v1/product/{id}
+```
+
+### Get Product By Oem
+
+```
+GET /v1/product/oem/{oem}
+Accept: application/json
+Content-Type: application/json
+{
+}
+RESPONSE: HTTP 200 (OK)
+Content: ProductDto
+Location header: http://localhost:8889/v1/product/oem/{oem}
+```
+
+### Delete Product By Id
+
+```
+GET /v1/product/{id}
+Accept: application/json
+Content-Type: application/json
+{
+}
+RESPONSE: HTTP 200 (OK)
+Content: boolean
 Location header: http://localhost:8889/v1/product/{id}
 ```
