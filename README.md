@@ -79,9 +79,9 @@ POST /v1/product
 Accept: application/json
 Content-Type: application/json
 {
-"name" : "GraalVM",
-"price" : "uber fasttt",
-"amount" : "GraalVM",
+"name" : "ROD",
+"price" : 5.0,
+"amount" : 2.0,
 "oemList" : [
         "15j2h15k215kjkjk52",
         "21321ewqe321j213as"
